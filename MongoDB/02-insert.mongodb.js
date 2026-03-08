@@ -25,3 +25,11 @@ db.test.insertOne(
     courses:["OOP", "Calculus", "DSA"]
   }
 )
+
+
+db.test.insertMany
+([
+  { name:"Hamza", age: 21, CGPA:3.3}, { name:"Noman", age:18, CGPA:3.8 },
+
+  { name:"Hasnain", age:22, CGPA:3.2 }, { name:"Osama", age:20, CGPA:3.4}
+])
