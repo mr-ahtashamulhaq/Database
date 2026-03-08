@@ -1,6 +1,6 @@
 //We Use find method to get stored documents
 
-// .find({Query}, {Projection})
+// SYNTAX --> .find({Query}, {Projection})
 
 //Find all documents
 db.test.find()
