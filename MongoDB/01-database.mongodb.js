@@ -1,6 +1,9 @@
 // Show all databases
 show dbs
 
+// Show COllections
+show collections
+
 // Switch to practicedb
 use practicedb
 
