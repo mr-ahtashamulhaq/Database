@@ -110,3 +110,13 @@ db.test.aggregate(
 db.test.aggregate([
  { $count:"total_students" }
 ])
+
+// Find top 2 students with CGPA above 3.2
+db.test.aggregate(
+  [
+    {$match: {CGPA: {$gt: 3.2}}},
+    {$sort: {CGPA:-1}},
+    {$limit: 2}, 
+    {$project: {name:true, _id:false, CGPA:true}}
+  ]
+)
